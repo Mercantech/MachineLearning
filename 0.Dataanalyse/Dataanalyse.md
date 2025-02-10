@@ -2,6 +2,17 @@
 
 Inden vi begynder på det store emne som er Machine Learning, vil jeg gerne have at I laver følgende 4 opgave sæt! Hele første dag af Machine Learning kurset er til at lave følgende opgaver, når man ikke dem alle er det okay, men på dag 2 går vi videre til linær regression.
 
+### PIP - Installering af pakker
+
+```bash
+# Installering af pakker manuelt
+pip install numpy pandas matplotlib
+# Eller hvis I har en requirements.txt fil
+pip install -r requirements.txt
+```
+
+Til større projekter, anbefaler jeg at I bruger et virtuelt miljø, som I kan installere pakkerne i. Der er en kort guide længere nede i dokumentet.
+
 ## NumPy
 
 NumPy er et fundamentalt Python-bibliotek, der bruges til videnskabelig computing og dataanalyse. Det giver en effektiv måde at oprette og manipulere arrays, som er essentielle datastrukturer i maskinlæring. NumPy arrays kan være en- eller flerdimensionelle og bruges til at repræsentere data i rækker og kolonner, ligesom i en SQL-database.
@@ -106,4 +117,34 @@ Matplotlib er et omfattende bibliotek til at skabe statiske, animerede og intera
 
 Disse opgaver er designet til at give praktisk erfaring med dataanalyse, simulering, og finansiel analyse ved hjælp af Python og dets biblioteker.
 
-###
+## Opsætning af Virtuelt Miljø i Python
+
+#### Opsætning med Windows (CMD/Powershell)
+
+```bash
+python -m venv myenv
+myenv\Scripts\activate # Windows
+pip install numpy pandas matplotlib
+deactivate # For at deaktivere miljøet
+```
+
+#### Opsætning med Linux/MacOS
+
+```bash
+python3 -m venv myenv
+source myenv/bin/activate # Linux/MacOS
+pip install numpy pandas matplotlib
+deactivate # For at deaktivere miljøet
+```
+
+Hvis I skal bruge jeres venv i Jupyter Notebook, så skal I starte Jupyter Notebook med følgende kommando:
+
+```bash
+jupyter notebook --notebook-dir=myenv/Scripts
+```
+
+Eller opsætte Jupyter Notebook i jeres venv:
+
+```bash
+python -m ipykernel install --user --name myenv --display-name "Python (myenv)"
+```
