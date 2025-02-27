@@ -1,3 +1,7 @@
+# Author: SimonFJ20 & ReimarPB
+# Date: 2025-02-27
+# Description: This is a simple implementation of the Menace algorithm for Tic Tac Toe.
+
 from __future__ import annotations
 from enum import Enum
 import json
