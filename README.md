@@ -30,3 +30,4 @@ Her er en samling af ipynb filer som forklare omkring TimeSeries - [TimeSeries P
 Her er en samling af ipynb filer som forklare omkring Neural Network - [Neural Network Pensum](https://mercantec.notion.site/ml-neural-network)<br>
 
 Skulle der ske at være fejl og mangler, hvilket der nok er, er I mere end velkommende til at åbne et [issue](https://github.com/Mercantech/MachineLearning/issues), så det kan blive ændret!
+
